@@ -5,13 +5,13 @@
 **English** | [简体中文](README.zh-CN.md)
 
 [![License](https://img.shields.io/github/license/icrefin/dsh-provider-model-picker?style=flat-square)](LICENSE)
-[![Release](https://img.shields.io/github/v/release/icrefin/dsh-provider-model-picker?style=flat-square)](https://github.com/icrefin/dsh-provider-model-picker/releases/tag/v0.3.4)
+[![Release](https://img.shields.io/github/v/release/icrefin/dsh-provider-model-picker?style=flat-square)](https://github.com/icrefin/dsh-provider-model-picker/releases/tag/v0.3.5)
 [![CI](https://img.shields.io/github/actions/workflow/status/icrefin/dsh-provider-model-picker/ci.yml?branch=main&style=flat-square)](https://github.com/icrefin/dsh-provider-model-picker/actions/workflows/ci.yml)
 [![Last commit](https://img.shields.io/github/last-commit/icrefin/dsh-provider-model-picker?style=flat-square)](https://github.com/icrefin/dsh-provider-model-picker/commits/main)
 [![Stars](https://img.shields.io/github/stars/icrefin/dsh-provider-model-picker?style=flat-square)](https://github.com/icrefin/dsh-provider-model-picker/stargazers)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](https://github.com/icrefin/dsh-provider-model-picker/pulls)
 [![Node](https://img.shields.io/badge/node-%3E%3D22.17-339933?style=flat-square&logo=node.js)](https://nodejs.org)
-[![dsh](https://img.shields.io/badge/dsh-0.2.0--rc.2-4B5563?style=flat-square)](https://github.com/deepseek-ai/deepseek-harness)
+[![dsh](https://img.shields.io/badge/dsh-0.2.1--rc.3-4B5563?style=flat-square)](https://github.com/deepseek-ai/deepseek-harness)
 
 ## The ambiguity it removes
 
@@ -147,7 +147,7 @@ declaration fails the suite instead of the GUI.
 
 - **Node.js >= 22.17** and **pnpm 11.8.0** — the version pinned through
   `packageManager`, which `corepack enable` picks up.
-- **DeepSeek Harness `0.2.0-rc.2`**, the release this plugin's peer dependencies
+- **DeepSeek Harness `0.2.1-rc.3`**, the release this plugin's peer dependencies
   and its `SlotMap` typing are built against. A wrong slot id or option fails the
   typecheck.
 - **The shipped model picker stays enabled**, since this control reads the
@@ -162,7 +162,7 @@ git clone https://github.com/icrefin/dsh-provider-model-picker.git
 cd dsh-provider-model-picker
 pnpm install
 pnpm build                       # tsc -> lib/, tsdown -> lib/client.js
-sh scripts/install.sh            # packs dist/dsh-provider-model-picker-0.3.4.tgz, prints the install steps
+sh scripts/install.sh            # packs dist/dsh-provider-model-picker-0.3.5.tgz, prints the install steps
 ```
 
 `pnpm check` runs everything CI runs — `tsc` over the host half and the browser
@@ -302,4 +302,4 @@ MIT — see [LICENSE](./LICENSE).
 > If this control saves you from guessing which provider a session is on, a ⭐ star
 > helps other DSH users find it.
 
-<sub>An independent plugin for DeepSeek Harness 0.2.0-rc.2 · MIT licensed.</sub>
+<sub>An independent plugin for DeepSeek Harness 0.2.1-rc.3 · MIT licensed.</sub>

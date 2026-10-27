@@ -1,6 +1,6 @@
 {
   "name": "dsh-provider-model-picker",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "Composer model control that names the provider beside the model (\"DeepSeek Demo/DeepSeek-V4.1-Flash\") while keeping the provider-grouped picker",
   "keywords": [
     "deepseek-harness",
@@ -14,7 +14,7 @@
   "packageManager": "pnpm@11.8.0",
   "engines": {
     "node": ">=22.17.0",
-    "dsh": "0.2.0-rc.2"
+    "dsh": "0.2.1-rc.3"
   },
   "main": "lib/index.js",
   "types": "lib/types/index.d.ts",
@@ -55,18 +55,18 @@
     }
   },
   "peerDependencies": {
-    "@deepseek-ai/cordis": "^4.0.1",
-    "@deepseek-ai/dsh-client-locale": "0.2.0-rc.2",
-    "@deepseek-ai/dsh-client-ui-conversation": "0.2.0-rc.2",
-    "@deepseek-ai/dsh-client-ui-model-selection": "0.2.0-rc.2",
+    "@deepseek-ai/cordis": "^4.0.5",
+    "@deepseek-ai/dsh-client-locale": "0.2.1-rc.3",
+    "@deepseek-ai/dsh-client-ui-conversation": "0.2.1-rc.3",
+    "@deepseek-ai/dsh-client-ui-model-selection": "0.2.1-rc.3",
     "react": "^18.2.0"
   },
   "devDependencies": {
-    "@deepseek-ai/cordis": "^4.0.1",
-    "@deepseek-ai/dsh-client-locale": "0.2.0-rc.2",
-    "@deepseek-ai/dsh-client-ui-conversation": "0.2.0-rc.2",
-    "@deepseek-ai/dsh-client-ui-model-selection": "0.2.0-rc.2",
-    "@deepseek-ai/dsh-client-ui-slots": "0.2.0-rc.2",
+    "@deepseek-ai/cordis": "^4.0.5",
+    "@deepseek-ai/dsh-client-locale": "0.2.1-rc.3",
+    "@deepseek-ai/dsh-client-ui-conversation": "0.2.1-rc.3",
+    "@deepseek-ai/dsh-client-ui-model-selection": "0.2.1-rc.3",
+    "@deepseek-ai/dsh-client-ui-slots": "0.2.1-rc.3",
     "@types/node": "^22.20.0",
     "@types/react": "~18.3.1",
     "@types/react-dom": "~18.3.0",

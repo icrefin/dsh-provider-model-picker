@@ -5,13 +5,13 @@
 [English](README.md) | **简体中文**
 
 [![License](https://img.shields.io/github/license/icrefin/dsh-provider-model-picker?style=flat-square)](LICENSE)
-[![Release](https://img.shields.io/github/v/release/icrefin/dsh-provider-model-picker?style=flat-square)](https://github.com/icrefin/dsh-provider-model-picker/releases/tag/v0.3.5)
+[![Release](https://img.shields.io/github/v/release/icrefin/dsh-provider-model-picker?style=flat-square)](https://github.com/icrefin/dsh-provider-model-picker/releases/tag/v0.3.6)
 [![CI](https://img.shields.io/github/actions/workflow/status/icrefin/dsh-provider-model-picker/ci.yml?branch=main&style=flat-square)](https://github.com/icrefin/dsh-provider-model-picker/actions/workflows/ci.yml)
 [![Last commit](https://img.shields.io/github/last-commit/icrefin/dsh-provider-model-picker?style=flat-square)](https://github.com/icrefin/dsh-provider-model-picker/commits/main)
 [![Stars](https://img.shields.io/github/stars/icrefin/dsh-provider-model-picker?style=flat-square)](https://github.com/icrefin/dsh-provider-model-picker/stargazers)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](https://github.com/icrefin/dsh-provider-model-picker/pulls)
 [![Node](https://img.shields.io/badge/node-%3E%3D22.17-339933?style=flat-square&logo=node.js)](https://nodejs.org)
-[![dsh](https://img.shields.io/badge/dsh-0.2.1--rc.3-4B5563?style=flat-square)](https://github.com/deepseek-ai/deepseek-harness)
+[![dsh](https://img.shields.io/badge/dsh-0.2.1--rc.5-4B5563?style=flat-square)](https://github.com/deepseek-ai/deepseek-harness)
 
 ## 它消除的歧义
 
@@ -127,8 +127,8 @@ context。`directoryFor()` 会用 `this.ctx.remote.session` 构造某个会话�
 
 ## 环境要求
 
-- **Node.js >= 22.17** 与 **pnpm 11.8.0** —— 通过 `packageManager` 固定的版本，`corepack enable` 会自动采用。
-- **DeepSeek Harness `0.2.1-rc.3`**，本插件的 peer 依赖和 `SlotMap` 类型都是针对这个版本编写的。
+- **Node.js >= 22.17** 与 **pnpm 11.20.0** —— 通过 `packageManager` 固定的版本，`corepack enable` 会自动采用。
+- **DeepSeek Harness `>=0.2.1-rc.5 <0.2.2-0`**，本插件的 peer 依赖和 `SlotMap` 类型都是针对这个区间（验证于 0.2.1-rc.5）编写的。
   slot id 或选项写错，typecheck 就会失败。
 - **随包模型选择器保持启用**，因为这个控件读的正是它发布的按会话目录服务。
 - **`lib/` 不入库。** 发布的源码树只有 TypeScript，因此安装 bundle 之前请先构建。
@@ -245,4 +245,4 @@ MIT —— 见 [LICENSE](./LICENSE)。
 
 > 如果这个控件让你不用再猜某个会话到底在哪个 provider 上，一颗 ⭐ star 能帮更多 DSH 用户发现它。
 
-<sub>面向 DeepSeek Harness 0.2.1-rc.3 的独立插件 · MIT 许可。</sub>
+<sub>面向 DeepSeek Harness 0.2.1-rc.5 的独立插件 · MIT 许可。</sub>
